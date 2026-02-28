@@ -15,7 +15,6 @@ fi
 echo "Starting MTG proxy on port ${BIND_PORT}..."
 echo "Connect via: tg://proxy?server=YOUR_IP&port=${BIND_PORT}&secret=${SECRET}"
 
-exec /mtg simple-run \
-    --dns "${DNS}" \
+exec /usr/local/bin/mtg simple-run \
     "0.0.0.0:${BIND_PORT}" \
     "${SECRET}"

@@ -1,6 +1,6 @@
 name: "MTG Proxy"
 description: "Bullshit-free MTProto proxy for Telegram (9seconds/mtg v2)"
-version: "1.0.2"
+version: "1.0.3"
 slug: "mtg_proxy"
 init: false
 arch:
