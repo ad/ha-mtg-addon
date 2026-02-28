@@ -6,7 +6,7 @@ MTProto proxy for Telegram based on [9seconds/mtg](https://github.com/9seconds/m
 
 1. Go to **Settings → Add-ons → Add-on Store**
 2. Click the 3-dot menu (top right) → **Repositories**
-3. Add: `https://github.com/YOUR_USERNAME/ha-mtg-addon`
+3. Add: `https://github.com/ad/ha-mtg-addon`
 4. Find **MTG Proxy** in the store and install it
 
 ## Configuration

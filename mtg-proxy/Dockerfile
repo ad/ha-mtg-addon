@@ -1,7 +1,7 @@
-ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base:latest
+ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-ARG MTG_VERSION="2.1.11"
+ARG MTG_VERSION="2.1.13"
 
 RUN apk add --no-cache jq ca-certificates curl tar && \
     ARCH=$(uname -m) && \
@@ -17,7 +17,8 @@ RUN apk add --no-cache jq ca-certificates curl tar && \
     tar -xzf /tmp/mtg.tar.gz -C /tmp && \
     mv /tmp/mtg /usr/local/bin/mtg && \
     chmod +x /usr/local/bin/mtg && \
-    rm -rf /tmp/mtg*
+    rm -rf /tmp/mtg* && \
+    apk del curl tar
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
