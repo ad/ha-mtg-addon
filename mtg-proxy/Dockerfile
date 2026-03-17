@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-ARG MTG_VERSION="2.1.11"
+ARG MTG_VERSION="2.2.1"
 
 RUN apk add --no-cache jq ca-certificates curl tar && \
     ARCH=$(uname -m) && \
